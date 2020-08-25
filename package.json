@@ -1,0 +1,32 @@
+{
+    "name": "CIRC-Rover-UI",
+    "version": "1.0.0",
+    "description": "[Look at this to change socket](client/src/App.js)",
+    "main": "index.js",
+    "dependencies": {
+        "concurrently": "^5.2.0",
+        "moment": "^2.27.0",
+        "react-moment": "^0.9.7"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "server": "cd Backend && npm run dev",
+        "client": "cd Frontend && npm run start",
+        "testdash": "cd testDashboard && npm run start",
+        "db": "cd Database && npm run db",
+        "clear": "cd Backend && node clear.js && cd ..",
+        "dev": "concurrently \"npm run server\" \"npm run client\"  \"npm run db\" \"npm run testdash\"",
+        "ind": "concurrently \"cd Backend && npm i\" \"cd Frontend && npm i\" \"cd Database && npm i\" \"cd testDashboard && npm i\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/teamr3/CIRC-Rover-UI.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/teamr3/CIRC-Rover-UI/issues"
+    },
+    "homepage": "https://github.com/teamr3/CIRC-Rover-UI#readme"
+}

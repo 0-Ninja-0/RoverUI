@@ -1,0 +1,7 @@
+{
+    "events": {
+        "restart": "kill-port 7001  --method udp",
+        "crash": "kill-port 7001  --method udp"
+    },
+    "delay": "1500"
+}
